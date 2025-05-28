@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMD Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Windows CMD Header -->
+  <div class="header">
+    <p>Microsoft Windows [Version 11.0.19045.3803]</p>
+    <p>(c) Microsoft Corporation. All rights reserved.</p>
+  </div>
+
+  <!-- Profile Section -->
+  <div class="prompt">C:\portfolio&gt; <span class="cmd" onclick="showSection('profile')">PROFILE</span></div>
+  <div id="profile" class="section">
+    <p>Name: Kolade Abdul-lateef</p>
+    <p>Title: Backend Developer</p>
+    <div class="intro">
+      <p>Hello! I'm a Backend Developer, passionate about learning backend systems Intermediate-level backend 
+        developer with a strong interest in how server-side technologies like APIs, databases, and authentication 
+        work together. Quick learner with solid problem-solving skills and a desire to deepen my understanding of 
+        backend architecture. Eager to grow through hands-on experience and contribute to impactful projects.</p>
+    </div>
+  </div>
+
+  <!-- CV Download Button -->
+  <div class="prompt">C:\portfolio&gt;</div>
+  <div class="cv-download" onclick="downloadCV()">DOWNLOAD_MY_CV.EXE</div>
+
+  <!-- Command Options -->
+  <div class="command-area">
+    <div class="prompt">C:\portfolio&gt; <span class="blink">_</span></div>
+    <p>Available commands:</p>
+    <p>
+      <span class="cmd" onclick="showSection('skills')">SKILLS</span>
+      <span class="cmd" onclick="showSection('projects')">PROJECTS</span>
+      <span class="cmd" onclick="showSection('contact')">CONTACT</span>
+    </p>
+  </div>
+
+  <!-- Hidden Sections -->
+  <div id="skills" class="section" style="display:none">
+    <div class="prompt">C:\portfolio\skills&gt;DIR</div>
+    <ul>
+      <li>Languages: Python, Java(intermediate), C++(intermediate)</li>
+      <li>Frameworks:  Django</li>
+      <li>Tools: Visual Studio, Git, cursor, pycharm</li>
+    </ul>
+  </div>
+
+  <div id="projects" class="section" style="display:none">
+    <div class="prompt">C:\portfolio\projects&gt;DIR</div>
+    <div class="project">
+      <p> 05/01/2024  02:14 PM    &lt;DIR&gt; <a href="https://github.com/M0RAKINY0/inventory_management_app.git">An inventory management app</a></p>
+      <p> A backend-focused inventory management system using Django to track products, quantities, 
+        and categories. Built features for adding, updating, and deleting items, with stock alerts and admin 
+        authentication for secure access</p>
+    </div>
+    <div class="project">
+      <p> 04/15/2024  10:22 AM    &lt;DIR&gt; <a href="https://github.com/M0RAKINY0/portfolio_source_code.git">Portfolio source code</a></p>
+      <p>           Click the link above to view the source code for this portfolio</p>
+    </div>
+  </div>
+
+  <div id="contact" class="section" style="display:none">
+    <div class="prompt">C:\portfolio&gt;CONTACT.EXE</div>
+    <p>Email: <a href="morakinyokolade43@gmail.com">Email me!</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/morakinyo-kolade-471864286/">www.linkedin.com/in/morakinyo-kolade</a></p>
+    <p>GitHub: <a href="https://github.com/M0RAKINY0">github.com/M0RAKINY0</a></p>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
